@@ -1,16 +1,15 @@
-package data;
+package org.apiTests;
 
+import api.ApiErrorMessages;
+import api.ApiResources;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import org.example.BookApiTest;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
-
-import static io.restassured.RestAssured.given;
 
 public class APITestCase {
     public static String API_ROOT = "http://127.0.0.1:5000/api";
@@ -41,11 +40,11 @@ public class APITestCase {
 
         if (method.equalsIgnoreCase("GET") && bookId != null) {
             resourcePath = resourcePath.replace("{id}", String.valueOf(bookId));
-            BookApiTest.response = given().when().get(resourcePath);
+            BookApiTest.response = RestAssured.given().when().get(resourcePath);
         } else if (method.equalsIgnoreCase("PUT")) {
             BookApiTest.response = BookApiTest.request.when().put(resourcePath);
         } else if (method.equalsIgnoreCase("GET")) {
-            BookApiTest.response = given().when().get(resourcePath);
+            BookApiTest.response = RestAssured.given().when().get(resourcePath);
         }
     }
 
@@ -56,7 +55,7 @@ public class APITestCase {
     }
 
     public void assertErrorResponse(String requestBody, ApiErrorMessages expectedError) {
-        BookApiTest.request = given().spec(getCommonReq()).body(requestBody);
+        BookApiTest.request = RestAssured.given().spec(getCommonReq()).body(requestBody);
         executeApi(ApiResources.addBook, "PUT");
 
         Assert.assertEquals(BookApiTest.response.getStatusCode(), 400);

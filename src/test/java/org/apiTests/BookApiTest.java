@@ -1,11 +1,16 @@
-package org.example;
+package org.apiTests;
 
+import api.ApiErrorMessages;
+import api.ApiResources;
+import api.Data;
+import api.RandomTextGenerator;
+import api.*;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
-import data.*;
+
 import java.util.List;
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
