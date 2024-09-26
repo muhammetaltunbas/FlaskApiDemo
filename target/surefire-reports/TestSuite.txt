@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 53.982 s <<< FAILURE! - in TestSuite
+testLogin(uiTests.loginTests)  Time elapsed: 0.305 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at uiTests.loginTests.testLogin(loginTests.java:35)
+
+testLogin(uiTests.loginTests)  Time elapsed: 0.024 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at uiTests.loginTests.testLogin(loginTests.java:35)
+
+testLogin(uiTests.loginTests)  Time elapsed: 0.024 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.4', java.version: '21.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0.1, moz:accessibilityChecks: false, moz:buildID: 20240913135723, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 23.4.0, moz:processID: 15182, moz:profile: /var/folders/9j/dh6y84xx7zj..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+

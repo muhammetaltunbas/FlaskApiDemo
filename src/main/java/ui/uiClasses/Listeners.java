@@ -29,10 +29,8 @@ public class Listeners extends BaseUI implements ITestListener {
     }
 
     public void onTestFailure(ITestResult result) {
-        // TODO Auto-generated method stub
-        // Screenshot
+
         extentTest.get().fail(result.getThrowable());
-        //WebDriver driver = null;
         String testMethodName = result.getMethod().getMethodName();
 
         try {
@@ -46,7 +44,7 @@ public class Listeners extends BaseUI implements ITestListener {
                     result.getMethod().getMethodName());
 
         } catch (IOException e) {
-            // TODO Auto-generated catch block
+
             e.printStackTrace();
         }
     }

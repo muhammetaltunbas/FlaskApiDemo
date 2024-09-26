@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import ui.uiClasses.BaseUI;
 import ui.uiPages.LoginPage;
+
 import java.io.IOException;
 
 public class LoginTest extends BaseUI {
@@ -11,25 +12,26 @@ public class LoginTest extends BaseUI {
 
     @Parameters("browser")
     @BeforeMethod
-    public void go_loginPage(@Optional("chrome") String browser) throws IOException {
+    public void goLoginPage(@Optional("chrome") String browser) throws IOException {
         driver = initializeDriver(browser);
-        driver.get("https://www.trendyol.com/giris");
+        driver.get(LOGIN_URL);
     }
 
     @DataProvider(name = "loginData")
     public Object[][] loginDataProvider() {
         return new Object[][]{
                 {"tofeva3141@exweme.com", "Test.1903*", true},
-                {"invalidUser", "validPass", false},
-                {"validUser", "invalidPass", false},
+                {"invalidUser", "Test.1903*", false},
+                {"tofeva3141@exweme.com", "invalidPass", false},
                 {"", "", false}, // Empty fields
-                {"validUser", "", false}, // Empty password
-                {"", "validPass", false}  // Empty username
+                {"tofeva3141@exweme.com", "", false}, // Empty password
+                {"", "Test.1903*", false},  // Empty username
+                {"", "Test.1903*", true}// fails on purposely
         };
     }
 
     @Test(dataProvider = "loginData")
-    public void testLogin(String username, String password, boolean expectedSuccess) {
+    public void testLogin(String username, String password, boolean expectedSuccess) throws InterruptedException {
         lp = new LoginPage(driver);
         boolean loginSuccess = lp.performLogin(username, password);
         Assert.assertEquals(loginSuccess, expectedSuccess);
@@ -41,6 +43,5 @@ public class LoginTest extends BaseUI {
             driver.quit();
         }
     }
-
 
 }

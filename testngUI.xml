@@ -3,6 +3,7 @@
     <listeners>
         <listener class-name="ui.uiClasses.Listeners" />
     </listeners>
+
     <test name="ChromeTest">
         <parameter name="browser" value="chrome" />
         <classes>

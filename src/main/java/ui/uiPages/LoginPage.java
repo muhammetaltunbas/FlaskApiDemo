@@ -1,9 +1,13 @@
 package ui.uiPages;
 
+import data.StaticTexts;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import ui.uiClasses.BaseUI;
+
+import java.time.Duration;
 
 public class LoginPage extends BaseUI {
     private WebDriver driver;
@@ -13,9 +17,7 @@ public class LoginPage extends BaseUI {
     private By userPassword = By.id("login-password-input");
     private By loginBtn = By.cssSelector("[type='submit']");
     private By errorMessage = By.id("error-box-wrapper");
-
-
-    private String homepageTitle = "En Trend Ürünler Türkiye'nin Online Alışveriş Sitesi Trendyol'da";
+    private WebDriverWait wait;
 
     // Constructor
     public LoginPage(WebDriver driver) {
@@ -40,9 +42,10 @@ public class LoginPage extends BaseUI {
     }
 
 
-    public boolean performLogin(String username, String password) {
+    public boolean performLogin(String username, String password) throws InterruptedException {
         enterCredentials(username, password);
         getLoginButton().click();
+        Thread.sleep(500);
 
         if (isHomepageDisplayed()) {
             return true; // Login successful
@@ -64,7 +67,7 @@ public class LoginPage extends BaseUI {
 
     private boolean isHomepageDisplayed() {
         String actualTitle = driver.getTitle();
-        return actualTitle.contains(homepageTitle);
+        return actualTitle.contains(StaticTexts.HOME_PAGE_TITLE);
     }
 
     private boolean isElementPresent(By locator) {

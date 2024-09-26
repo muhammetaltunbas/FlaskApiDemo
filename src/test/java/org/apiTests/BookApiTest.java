@@ -2,9 +2,8 @@ package org.apiTests;
 
 import api.ApiErrorMessages;
 import api.ApiResources;
-import api.Data;
+import api.ApiData;
 import api.RandomTextGenerator;
-import api.*;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
@@ -33,29 +32,29 @@ public class BookApiTest extends APITestCase {
 
     @Test(priority = 1)
     public void testMissingAuthor() {
-        assertErrorResponse(Data.missingAuthor(), ApiErrorMessages.MISSING_AUTHOR);
+        assertErrorResponse(ApiData.missingAuthor(), ApiErrorMessages.MISSING_AUTHOR);
     }
 
     @Test(priority = 2)
     public void testMissingTitle() {
-        assertErrorResponse(Data.missingTitle(), ApiErrorMessages.MISSING_TITLE);
+        assertErrorResponse(ApiData.missingTitle(), ApiErrorMessages.MISSING_TITLE);
     }
 
     @Test(priority = 3)
     public void testEmptyTitleFieldError() {
-        assertErrorResponse(Data.emptyTitle(), ApiErrorMessages.EMPTY_TITLE);
+        assertErrorResponse(ApiData.emptyTitle(), ApiErrorMessages.EMPTY_TITLE);
     }
 
     @Test(priority = 4)
     public void testEmptyAuthorFieldError() {
-        assertErrorResponse(Data.emptyAuthor(), ApiErrorMessages.EMPTY_AUTHOR);
+        assertErrorResponse(ApiData.emptyAuthor(), ApiErrorMessages.EMPTY_AUTHOR);
     }
 
     @Test(priority = 5)
     public void testAddNewBook() {
         uniqueTitle = "Book Title " + RandomTextGenerator.generateRandomText();
         uniqueAuthor = "Author " + RandomTextGenerator.generateRandomText();
-        request = given().spec(getCommonReq()).body(Data.addNewBook(uniqueTitle, uniqueAuthor));
+        request = given().spec(getCommonReq()).body(ApiData.addNewBook(uniqueTitle, uniqueAuthor));
         executeApi(ApiResources.addBook, "PUT");
 
         Assert.assertEquals(response.getStatusCode(), 201);
@@ -78,7 +77,7 @@ public class BookApiTest extends APITestCase {
     @Test(priority = 7)
     public void testAddDuplicateBook() {
         testAddNewBook();
-        assertErrorResponse(Data.addNewBook(uniqueTitle, uniqueAuthor), ApiErrorMessages.DUPLICATE_BOOK);
+        assertErrorResponse(ApiData.addNewBook(uniqueTitle, uniqueAuthor), ApiErrorMessages.DUPLICATE_BOOK);
     }
 
     @Test(priority = 8)
@@ -95,7 +94,7 @@ public class BookApiTest extends APITestCase {
         uniqueTitle = "Book Title " + RandomTextGenerator.generateRandomText();
         uniqueAuthor = "Author " + RandomTextGenerator.generateRandomText();
         int randomBookID = 190300;
-        assertErrorResponse(Data.addNewBookWithId(uniqueTitle, uniqueAuthor, randomBookID), ApiErrorMessages.FIELD_ID);
+        assertErrorResponse(ApiData.addNewBookWithId(uniqueTitle, uniqueAuthor, randomBookID), ApiErrorMessages.FIELD_ID);
 
     }
 

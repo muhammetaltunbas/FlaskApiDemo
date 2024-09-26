@@ -1,6 +1,6 @@
 package api;
 
-public class Data {
+public class ApiData {
 
     public static String bookTitle = RandomTextGenerator.generateRandomText();
     public static String bookAuthor = RandomTextGenerator.generateRandomText();

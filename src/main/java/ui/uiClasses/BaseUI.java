@@ -13,9 +13,12 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseUI {
 
-    public static WebDriver driver;
+    public WebDriver driver;
 
     private BrowserFactory browserFactory;
+
+    public static final String BASE_URL = "https://www.trendyol.com/";
+    public static final String LOGIN_URL = "https://www.trendyol.com/giris";
 
     public WebDriver initializeDriver(String browserType) throws IOException {
         switch (browserType.toLowerCase()) {

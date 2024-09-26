@@ -1,0 +1,18 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "title": {
+        "type": "string"
+      },
+      "author": {
+        "type": "string"
+      }
+    },
+    "required": ["id", "title", "author"]
+  }
+}
