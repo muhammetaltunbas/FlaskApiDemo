@@ -8,7 +8,7 @@ public class RandomTextGenerator {
 
     public static String generateRandomText() {
         SecureRandom random = new SecureRandom();
-        StringBuilder sb = new StringBuilder("Test "); // "Test" ile başlar
+        StringBuilder sb = new StringBuilder("Test ");
         for (int i = 0; i < LENGTH; i++) {
             int index = random.nextInt(CHARACTERS.length());
             sb.append(CHARACTERS.charAt(index));
