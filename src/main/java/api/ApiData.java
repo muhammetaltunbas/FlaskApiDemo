@@ -2,6 +2,7 @@ package api;
 
 public class ApiData {
 
+    //Test
     public static String bookTitle = RandomTextGenerator.generateRandomText();
     public static String bookAuthor = RandomTextGenerator.generateRandomText();
 
