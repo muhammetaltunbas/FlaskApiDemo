@@ -1,21 +1,19 @@
 package api;
 
 public enum ApiResources {
+    ADD_ITEM("/cart/"),
+    APPLY_DISCOUNT("/cart/apply_discount/"),
+    GET_CHECKOUT("/cart/checkout/"),
+    DELETE_ITEM("/cart/{id}/"),
+    REMOVE_DISCOUNT("/cart/remove_discount/");
 
-    addBook("/books/"),
-    getAllBooks("/books/"),
-    getBook("/books/{id}/");
+    private final String resourcePath;
 
-    private String resources;
-
-    ApiResources(String resources)
-    { // Constructor
-        this.resources = resources;
+    ApiResources(String resourcePath) {
+        this.resourcePath = resourcePath;
     }
 
-    public String getResources() {
-        return resources;
+    public String getResourcePath() {
+        return resourcePath;
     }
-
-
 }

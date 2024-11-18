@@ -3,7 +3,7 @@
 
     <test name="API Tests">
         <classes>
-            <class name="org.apiTests.BookApiTest"/>
+            <class name="apiTests.GiftcertApiTest"/>
         </classes>
     </test>
 

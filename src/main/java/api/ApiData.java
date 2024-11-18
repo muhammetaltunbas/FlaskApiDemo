@@ -2,43 +2,21 @@ package api;
 
 public class ApiData {
 
-    //Test
-    public static String bookTitle = RandomTextGenerator.generateRandomText();
-    public static String bookAuthor = RandomTextGenerator.generateRandomText();
-
-    public static String missingTitle() {
-        return "{ \"author\": \"Author Name\" }";
-    }
-
-    public static String missingAuthor() {
-        return "{ \"title\": \"Automation Testing\" }";
-    }
-
-    public static String emptyTitle() {
-        return "{\"author\": \"Author Name\", \"title\": \"\" }";
-    }
-
-    public static String emptyAuthor() {
-        return "{\"title\": \"Title Info\", \"author\": \"\" }";
-    }
-
-
-    public static String addNewBook(String title, String author) {
-
+    public static String addNewItem(String name, int price, int quantity) {
         return "{\n" +
-                "    \"title\": \"" + title + "\",\n" +
-                "    \"author\": \"" + author + "\"\n" +
+                "    \"name\": \"" + name + "\",\n" +
+                "    \"price\": " + price + ",\n" +
+                "    \"quantity\": " + quantity + "\n" +
                 "}";
     }
 
-    public static String addNewBookWithId(String title, String author, int bookID) {
-
-        return "{\n" +
-                "    \"title\": \"" + title + "\",\n" +
-                "    \"author\": \"" + author + "\",\n" +
-                "    \"id\": \"" + bookID + "\"\n" +
-                "}";
+    public static String addNewItem(String name, int price) {
+        return addNewItem(name, price, 1);
     }
 
-
+    public static String applyDiscount(String discountCode) {
+        return "{\n" +
+                "    \"discount_code\": \"" + discountCode + "\"\n" +
+                "}";
+    }
 }
