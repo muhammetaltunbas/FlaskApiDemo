@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dd8623a4-c8d7-45db-a319-4aebb26d773e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ApiClasses/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ApiClasses/Checkout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/apiTests/TestAddToCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/apiTests/TestDeleteBasket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/apiTests/TestGiftcertApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiTests/GiftcertApiTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/resources/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/apiTests/GiftcertApiTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testngAPI.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testngAPI.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2mNMs1mtesFt9f3rVMeTdhs2st8" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG./Users/maltunbas/Desktop/gitDosyalar/APIProjects/ApiBookV4/testng.xml.executor": "Run",
+    "TestNG./Users/maltunbas/Desktop/gitDosyalar/APIProjects/ApiBookV4/testngAPI.xml.executor": "Run",
+    "TestNG./Users/maltunbas/Desktop/gitDosyalar/APIProjects/ApiBookV4/testngUI.xml.executor": "Run",
+    "TestNG./Users/maltunbas/Desktop/gitDosyalar/APIProjects/FlaskDemo/testngAPI.xml.executor": "Run",
+    "TestNG.<default>.executor": "Run",
+    "TestNG.BookApiTest (1).executor": "Run",
+    "TestNG.BookApiTest.executor": "Run",
+    "TestNG.BookApiTest.testAddBookWithEmptyFields.executor": "Run",
+    "TestNG.BookApiTest.testAddBookWithMissingFields.executor": "Run",
+    "TestNG.BookApiTest.testAddDuplicateBook.executor": "Run",
+    "TestNG.BookApiTest.testAddNewBook.executor": "Run",
+    "TestNG.BookApiTest.testEmptyAuthor.executor": "Run",
+    "TestNG.BookApiTest.testEmptyAuthorFieldError.executor": "Run",
+    "TestNG.BookApiTest.testEmptyTitle.executor": "Run",
+    "TestNG.BookApiTest.testEmptyTitleFieldError.executor": "Run",
+    "TestNG.BookApiTest.testGetBookById.executor": "Run",
+    "TestNG.BookApiTest.testGetBookByInvalidId.executor": "Run",
+    "TestNG.BookApiTest.testGetBookResponseSchema.executor": "Run",
+    "TestNG.BookApiTest.testInitialBookStoreIsEmpty.executor": "Run",
+    "TestNG.BookApiTest.testInitialBookStoreIsEmpty2.executor": "Run",
+    "TestNG.BookApiTest.testMissingAuthor.executor": "Run",
+    "TestNG.BookApiTest.testMissingTitle.executor": "Run",
+    "TestNG.BookApiTest.testSendIdObjectInPayload.executor": "Run",
+    "TestNG.BoutiqueLinkTests (1).executor": "Run",
+    "TestNG.BoutiqueLinkTests (2).executor": "Run",
+    "TestNG.BoutiqueLinkTests (3).executor": "Run",
+    "TestNG.BoutiqueLinkTests (4).executor": "Run",
+    "TestNG.BoutiqueLinkTests (5).executor": "Run",
+    "TestNG.BoutiqueLinkTests.executor": "Run",
+    "TestNG.GiftcertApiTest (1).executor": "Run",
+    "TestNG.GiftcertApiTest (2).executor": "Run",
+    "TestNG.GiftcertApiTest (3).executor": "Run",
+    "TestNG.GiftcertApiTest.applyGiftcert.executor": "Run",
+    "TestNG.GiftcertApiTest.applyGiftcertTest.executor": "Run",
+    "TestNG.GiftcertApiTest.executor": "Run",
+    "TestNG.GiftcertApiTest.testAddtocart.executor": "Run",
+    "TestNG.GiftcertApiTest.testApplyGiftcert.executor": "Debug",
+    "TestNG.LoginTest (1).executor": "Run",
+    "TestNG.LoginTest (2).executor": "Run",
+    "TestNG.LoginTest (3).executor": "Run",
+    "TestNG.LoginTest (4).executor": "Run",
+    "TestNG.LoginTest (5).executor": "Run",
+    "TestNG.LoginTest.executor": "Run",
+    "TestNG.LoginTest.testLogin.executor": "Debug",
+    "TestNG.TestGiftcertApi (1).executor": "Run",
+    "TestNG.TestGiftcertApi (2).executor": "Run",
+    "TestNG.TestGiftcertApi (3).executor": "Run",
+    "TestNG.TestGiftcertApi.applyGiftcertTest.executor": "Run",
+    "TestNG.TestGiftcertApi.executor": "Run",
+    "TestNG.TestGiftcertApi.testAddAndRemoveItemFlow.executor": "Run",
+    "TestNG.TestGiftcertApi.testAddToCart.executor": "Run",
+    "TestNG.loginTests (1).executor": "Run",
+    "TestNG.loginTests (2).executor": "Debug",
+    "TestNG.loginTests (3).executor": "Run",
+    "TestNG.loginTests (4).executor": "Run",
+    "TestNG.loginTests (5).executor": "Run",
+    "TestNG.loginTests.executor": "Run",
+    "TestNG.loginTests.go_homepage.executor": "Run",
+    "TestNG.loginTests.testLogin (1).executor": "Debug",
+    "TestNG.loginTests.testLogin.executor": "Debug",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/Users/maltunbas/Desktop/gitDosyalar/APIProjects/FlaskDemo/src/test/java",
+    "last_opened_file_path": "/Users/maltunbas/Desktop/gitDosyalar/APIProjects/FlaskDemo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources2" />
+      <recent name="$PROJECT_DIR$/src/main/resources1" />
+      <recent name="$PROJECT_DIR$/src/main" />
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="api" />
+      <recent name="ui.uiClasses" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.TestGiftcertApi">
+    <configuration name="TestGiftcertApi (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiTests" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.TestGiftcertApi" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGiftcertApi (3)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiTests" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.TestGiftcertApi" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGiftcertApi (4)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiTests" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.TestGiftcertApi" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGiftcertApi" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiTests" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.TestGiftcertApi" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGiftcertApi" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiTests" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.TestGiftcertApi" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGiftcertApi" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiTests" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.TestGiftcertApi" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGiftcertApi" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiTests" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.TestGiftcertApi" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGiftcertApi.testAddToCart" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="rest-assured-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiTests" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.TestGiftcertApi" />
+      <option name="METHOD_NAME" value="testAddToCart" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.TestGiftcertApi" />
+        <item itemvalue="TestNG.TestGiftcertApi.testAddToCart" />
+        <item itemvalue="TestNG.TestGiftcertApi (4)" />
+        <item itemvalue="TestNG.TestGiftcertApi (3)" />
+        <item itemvalue="TestNG.TestGiftcertApi (2)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd8623a4-c8d7-45db-a319-4aebb26d773e" name="Changes" comment="" />
+      <created>1726912783884</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726912783884</updated>
+      <workItem from="1726912784930" duration="25210000" />
+      <workItem from="1726945403206" duration="5405000" />
+      <workItem from="1727119754180" duration="14000" />
+      <workItem from="1727119773418" duration="4499000" />
+      <workItem from="1727124493882" duration="135000" />
+      <workItem from="1727205194540" duration="5222000" />
+      <workItem from="1727248719055" duration="93000" />
+      <workItem from="1727287162724" duration="5386000" />
+      <workItem from="1727371171181" duration="8674000" />
+      <workItem from="1727690199922" duration="702000" />
+      <workItem from="1728594832003" duration="15000" />
+      <workItem from="1730089558402" duration="1238000" />
+      <workItem from="1730879355788" duration="1000" />
+      <workItem from="1731242783297" duration="2589000" />
+      <workItem from="1731247854500" duration="10099000" />
+      <workItem from="1731334201711" duration="618000" />
+      <workItem from="1731871021688" duration="3752000" />
+      <workItem from="1731953725534" duration="4211000" />
+      <workItem from="1732344670114" duration="17000" />
+      <workItem from="1732344697245" duration="2295000" />
+      <workItem from="1732387254730" duration="3343000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:io.cucumber:cucumber-java" />
+    <option featureType="dependencySupport" implementationName="java:io.reactivex.rxjava3:rxjava" />
+    <option featureType="dependencySupport" implementationName="java:org.seleniumhq.selenium:selenium-java" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
